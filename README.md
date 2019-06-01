@@ -14,7 +14,7 @@ JAVA-
 |WarmUp| [Staircase](https://www.hackerrank.com/challenges/staircase/problem) | [Staircase](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Staircase) | 10.0 |
 |WarmUp| [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum/problem) | [Mini-Max Sum](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Mini-Max%20Sum) |10.0|
 |WarmUp| [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem) | [Birthday Cake Candles](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Birthday%20Cake%20Candles) |10.0|
-|WarmUp| []() | []() | Score|
+|WarmUp| [Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem) | [Time Conversion](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Time%20Conversion) | 15.0 |
 |WarmUp| []() | []() | Score|
 |WarmUp| []() | []() | Score|
 |WarmUp| []() | []() | Score|
