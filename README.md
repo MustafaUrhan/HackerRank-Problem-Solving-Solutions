@@ -94,12 +94,17 @@ JAVA-
 |Sorting| [Counting Sort 2](https://www.hackerrank.com/challenges/countingsort2/problem) | [Counting Sort 2](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Counting%20Sort%202) | 30.0 |
 |Sorting| [Closest Numbers](https://www.hackerrank.com/challenges/closest-numbers/problem) | [Closest Numbers](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Closest%20Numbers) | 35.0 |
 |Sorting| [Find the Median](https://www.hackerrank.com/challenges/find-the-median/problem) | [Find the Median](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Find%20the%20Median) | 35.0 |
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
-|Sorting| []() | []() | Score|
+|Sorting| [Insertion Sort - Part 1](https://www.hackerrank.com/challenges/insertionsort1/problem) | [Insertion Sort - Part 1](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Insertion%20Sort%20-%20Part%201-ch) | 30.0 |
+|Sorting| [Insertion Sort - Part 2](https://www.hackerrank.com/challenges/insertionsort2/problem) | [Insertion Sort - Part 2](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Insertion%20Sort%20-%20Part%202-ch) | 30.0 |
+|Sorting| [Correctness and the Loop Invariant](https://www.hackerrank.com/challenges/correctness-invariant/problem) | [Correctness and the Loop Invariant](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Correctness%20and%20the%20Loop%20Invariant-ch) | 30.0 |
+|Sorting| [Running Time of Algorithms](https://www.hackerrank.com/challenges/runningtime/problem) | [Running Time of Algorithms](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Running%20Time%20of%20Algorithms-ch) | 30.0 |
+|Sorting| [Quicksort 1 - Partition](https://www.hackerrank.com/challenges/quicksort1/problem) | [Quicksort 1 - Partition](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Quicksort%201%20-%20Partition-ch) | 10.0 |
+|Sorting| [Quicksort 2 - Sorting](https://www.hackerrank.com/challenges/quicksort2/problem) | [Quicksort 2 - Sorting](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/commit/a0f84a62f84f89308233468357af0585df6932db) | 30.0 |
+|Sorting| [Quicksort In-Place](https://www.hackerrank.com/challenges/quicksort3/problem) | [Quicksort In-Place](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Quicksort%20In-Place) | 35.0 |
+|Sorting| [Running Time of Quicksort](https://www.hackerrank.com/challenges/quicksort4/problem) | [Running Time of Quicksort](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Running%20Time%20of%20Quicksort) | 35.0 |
+|Sorting| [Counting Sort 1](https://www.hackerrank.com/challenges/countingsort1/problem) | [Counting Sort 1](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Counting%20Sort%201-ch) | 30.0 |
+|Sorting| [Counting Sort 2](https://www.hackerrank.com/challenges/countingsort2/problem) | [Counting Sort 2](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Counting%20Sort%202-ch) | 30.0 |
+|Sorting| [Counting Sort 3](https://www.hackerrank.com/challenges/countingsort3/problem) | [Counting Sort 3](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Counting%20Sort%203) | 30.0 |
+|Sorting| [The Full Counting Sort](https://www.hackerrank.com/challenges/countingsort4/problem) | [The Full Counting Sort](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/The%20Full%20Counting%20Sort-ch) | 40.0 |
+|Constructive Algorithms| [New Year Chaos](https://www.hackerrank.com/challenges/new-year-chaos/problem) | [New Year Chaos](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/New%20Year%20Chaos) | 40.0 |
+
