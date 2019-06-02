@@ -1,0 +1,103 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+     public static void main(String[] args) {
+      Scanner scanner=new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        
+        int[] arr_quick = new int[n];
+        int[] arr_insert=new int[n];
+        String[] arrItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int i = 0; i < n; i++) {
+            int arrItem = Integer.parseInt(arrItems[i]);
+            arr_quick[i] = arrItem;
+            arr_insert[i]=arrItem;
+        }
+        int quickCount=QuickSort(arr_quick,0,arr_quick.length-1);
+        int insertCount=InsertionSort(arr_insert);
+        System.out.println(insertCount-quickCount);
+    }
+    static int quickTotCount=0;
+    private static int QuickSort(int[] arr, int low, int high) {
+        if(low<high){
+            
+            Pair pair=partition(arr,low,high);
+            int partIndex=pair.getPartIndex();
+            quickTotCount+=pair.sortCount;
+            QuickSort(arr, low, partIndex-1);
+            QuickSort(arr, partIndex+1, high);
+        }
+        
+        return quickTotCount;
+    }
+    private static Pair partition(int[] arr, int low, int high) {
+        int pivot = arr[high];  
+        int i = (low-1);
+        int sortCount=0;
+        for (int j=low; j<high; j++) 
+        { 
+            if (arr[j] <= pivot) 
+            { 
+                i++; 
+                sortCount++;
+                int temp = arr[i]; 
+                arr[i] = arr[j]; 
+                arr[j] = temp; 
+            } 
+        }  
+        int temp = arr[i+1]; 
+        arr[i+1] = arr[high]; 
+        arr[high] = temp; 
+        Pair pair=new Pair(sortCount+1,i+1);
+        
+        return pair; 
+    }
+    static class Pair{
+        int sortCount;
+        int partIndex;
+        public Pair(int sortCount,int partIndex){
+            this.sortCount=sortCount;
+            this.partIndex=partIndex;
+        }
+         public int getSortCount() {
+            return sortCount;
+        }
+
+        public void setSortCount(int sortCount) {
+            this.sortCount = sortCount;
+        }
+
+        public int getPartIndex() {
+            return partIndex;
+        }
+
+        public void setPartIndex(int partIndex) {
+            this.partIndex = partIndex;
+        }
+    }
+    
+    private static int InsertionSort(int[] arr) {
+        int iSortCount=0;
+        int n = arr.length; 
+        for (int i = 1; i < n; ++i) { 
+            int key = arr[i]; 
+            int j = i - 1; 
+            while (j >= 0 && arr[j] > key) { 
+                arr[j + 1] = arr[j]; 
+                j = j - 1; 
+                iSortCount++;
+            } 
+            arr[j + 1] = key;
+        } 
+      return iSortCount;  
+    }
+}
+
