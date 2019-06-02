@@ -1,0 +1,100 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the almostSorted function below.
+      public static void almostSorted(int [] arr){
+        System.out.println(sortString(arr));
+    }
+    public static String sortString(int[] arr){
+        int sPosCase=0;
+        int sNegCase=0;
+        int bPos=0;
+        int endPos=0;
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]<=arr[i+1]){
+                sPosCase++;
+            }else{
+                sNegCase++;
+                if(sNegCase==1){
+                    bPos=i;
+                }
+                if(sNegCase>1){
+                    endPos=i+1;
+                }
+                
+            }
+        }
+        if(sPosCase==arr.length-1){return "yes";}
+         else if(sNegCase==1 || sNegCase==2 ){
+            int ePos=sNegCase==1 ? bPos+1:endPos;
+            int temp=arr[bPos];
+            arr[bPos]=arr[ePos];
+            arr[ePos]=temp;
+            if(isSorted(arr)){
+                return "yes\nswap"+" "
+                        +String.valueOf(bPos+1)
+                        +" "+String.valueOf(ePos+1);}
+            else{
+                return "no";
+            }
+        }else if(sNegCase>2){
+            int tBPos=bPos;
+            int tEndPos=endPos;
+            int avr=(tEndPos+tBPos)/2;
+            while(avr-->0){
+                int temp=arr[tBPos];
+                arr[tBPos]=arr[tEndPos];
+                arr[tEndPos]=temp;
+                tBPos++;
+                tEndPos--;
+                if(tBPos>=tEndPos){break;}
+            }
+            if(isSorted(arr)){
+                return "yes\nreverse"
+                        +" "+String.valueOf(bPos+1)
+                        +" "+String.valueOf(endPos+1);
+            }else{
+                return "no";
+            }
+        }
+        return "no";
+    }
+    public static boolean isSorted(int[] arr){
+        for(int i=0;i<arr.length-1;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]>arr[j]){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int n = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        int[] arr = new int[n];
+
+        String[] arrItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int i = 0; i < n; i++) {
+            int arrItem = Integer.parseInt(arrItems[i]);
+            arr[i] = arrItem;
+        }
+
+        almostSorted(arr);
+
+        scanner.close();
+    }
+}
