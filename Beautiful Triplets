@@ -1,0 +1,87 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the beautifulTriplets function below.
+    static int beautifulTriplets(int d, int[] arr) {
+         int tot=0;
+        for(int i=0;i<arr.length-2;i++)
+        {
+            int j=i+1;
+            boolean cheker_j=false;
+            boolean cheker_k=false;
+            while(j<arr.length-1 && !cheker_j)
+            {
+                if(arr[j]-arr[i]==d)
+                {
+                    cheker_j=true;
+                    break;
+                }
+                else if(arr[j]-arr[i]>d)
+                {
+                    break;
+                }
+                j++;
+            }
+            if(cheker_j)
+            {
+                int k=j+1;
+                while(k<arr.length && !cheker_k)
+                {
+                    if(arr[k]-arr[j]==d)
+                    {
+                        cheker_k=true;
+                        break;
+                    }
+                    else if(arr[k]-arr[j]>d)
+                    {
+                        break;
+                    }
+                    k++;
+                }
+            }
+            if(cheker_j && cheker_k){
+                tot++;
+            }   
+        }
+        return tot;
+
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] nd = scanner.nextLine().split(" ");
+
+        int n = Integer.parseInt(nd[0]);
+
+        int d = Integer.parseInt(nd[1]);
+
+        int[] arr = new int[n];
+
+        String[] arrItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int i = 0; i < n; i++) {
+            int arrItem = Integer.parseInt(arrItems[i]);
+            arr[i] = arrItem;
+        }
+
+        int result = beautifulTriplets(d, arr);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
