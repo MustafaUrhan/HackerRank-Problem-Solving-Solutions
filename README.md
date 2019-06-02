@@ -26,6 +26,21 @@ JAVA-
 |Implementation| [Day of the Programmer](https://www.hackerrank.com/challenges/day-of-the-programmer/problem) | [Day of the Programmer](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Day%20of%20the%20Programmer) | 15.0 |
 |Implementation| [Bon Appétit](https://www.hackerrank.com/challenges/bon-appetit/problem) | [Bon Appétit](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Bon%20App%C3%A9tit) | 10.0 |
 |Implementation| [Sock Merchant](https://www.hackerrank.com/challenges/sock-merchant/problem) | [Sock Merchant](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Sock%20Merchant) | 10.0 |
+|Implementation| [Drawing Book](https://www.hackerrank.com/challenges/drawing-book/problem) | [Drawing Book](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Drawing%20Book) | 10.0 |
+|Implementation| [Counting Valleys](https://www.hackerrank.com/challenges/counting-valleys/problem) | [Counting Valleys](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Counting%20Valleys) | 15.0 |
+|Implementation| [Electronics Shop](https://www.hackerrank.com/challenges/electronics-shop/problem) | [Electronics Shop](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Electronics%20Shop) | 15.0 |
+|Implementation| [Cats and a Mouse](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem) | [Cats and a Mouse](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Cats%20and%20a%20Mouse) | 15.0 |
+|Implementation| [Picking Numbers](https://www.hackerrank.com/challenges/picking-numbers/problem) | [Picking Numbers](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Picking%20Numbers) | 20.0 |
+|Implementation| [The Hurdle Race](https://www.hackerrank.com/challenges/the-hurdle-race/problem) | [The Hurdle Race](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/The%20Hurdle%20Race) | 15.0 |
+|Implementation| [Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem) | [Designer PDF Viewer](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Designer%20PDF%20Viewer) | 20.0 |
+|Implementation| [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree/problem) | [Utopian Tree](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Utopian%20Tree) | 20.0 |
+|Implementation| [Angry Professor](https://www.hackerrank.com/challenges/angry-professor/problem) | [Angry Professor](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Angry%20Professor) | 20.0 |
+|Implementation| [Beautiful Days at the Movies](https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem) | [Beautiful Days at the Movies](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Beautiful%20Days%20at%20the%20Movies) | 15.0 |
+|Implementation| [Viral Advertising](https://www.hackerrank.com/challenges/strange-advertising/problem) | [Viral Advertising](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Viral%20Advertising) | 15.0 |
+|Implementation| [Save the Prisoner!](https://www.hackerrank.com/challenges/save-the-prisoner/problem) | [Save the Prisoner!](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Save%20the%20Prisoner!) | 15.0 |
+|Implementation| [Circular Array Rotation](https://www.hackerrank.com/challenges/circular-array-rotation/problem) | [Circular Array Rotation](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Circular%20Array%20Rotation) | 20.0 |
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
