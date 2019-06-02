@@ -1,0 +1,212 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+   public static int twoPluses(String[] grid) {
+        ArrayList<position> aList = new ArrayList<>();
+        for (int i = 0; i < grid.length ; i++) {
+            for (int j = 0; j < grid[0].length() ; j++) {
+                boolean check = true;
+                boolean checkSides=false;
+                int right = 0;
+                int left = 0;
+                int up = 0;
+                int down = 0;
+                while (check) {
+                    if ((j + right + 1) < grid[0].length() && grid[i].charAt(j + right + 1) == 'G') {
+                        right++;
+                        checkSides=true;
+                    }
+                    if ((j - left - 1) >= 0 && grid[i].charAt(j - left - 1) == 'G') {
+                        left++;
+                        checkSides=true;
+                    }
+                    if ((i - up - 1) >= 0 && grid[i - up - 1].charAt(j) == 'G') {
+                        up++;
+                        checkSides=true;
+                    }
+                    if ((i + down + 1) < grid.length && grid[i + down + 1].charAt(j) == 'G') {
+                        down++;
+                        checkSides=true;
+                    }
+                    check = (left != right) ? false : (up != down) ? false : (left != up) ? false : true;
+                    if (check && grid[i].charAt(j)=='G' && checkSides) {
+                        int min = Math.min(left, Math.min(right, Math.min(up, down)));
+                        position pos = new position(i, j, min);
+                        aList.add(pos);
+                        checkSides=false;
+                    }else{break;}
+                }
+            }
+        }
+        for(position pos:aList){
+            System.out.println("x ="+pos.getX()+" y= "+pos.getY()+"--->"+pos.getPower()+"\n");
+        }
+
+        if (aList.isEmpty()) {
+            return 1;
+        } else if (aList.size() == 1) {
+            return aList.get(0).getPower() * 4 + 1;
+        } else {
+            int returnVal = 0;
+            int maxPower = 0;
+            while (!aList.isEmpty()) {
+                position f_pos = aList.get(0);
+                maxPower = Math.max(maxPower, f_pos.getPower());
+                aList.remove(f_pos);
+                ArrayList<position> fPosList = f_pos.getPositions();
+                for (position s_pos : aList) {
+                    //eger birbirine deymiyorsa ve en büyük sonucu veriyorsa
+                    boolean checkLoc = true;
+                    ArrayList<position> sPosList = s_pos.getPositions();
+                    for (position fPos : fPosList) {
+                        for(position sPos:sPosList ){
+                            if (fPos.x==sPos.x && fPos.y==sPos.y) {
+                            checkLoc = false;
+                            break;
+                        }
+                           
+                        }
+                        if(!checkLoc){break;}
+                        
+                    }
+                    if (checkLoc 
+                            && (returnVal < (s_pos.power * 4 + 1) * (f_pos.getPower() * 4 + 1))
+                            &&(f_pos.getX()!=s_pos.getX()||f_pos.getY()!=s_pos.getY())) {
+                        returnVal = (s_pos.power * 4 + 1) * (f_pos.getPower() * 4 + 1);
+                    }
+                }
+            }
+            return returnVal != 0 ? returnVal : maxPower * 4 + 1;
+        }
+    }
+
+    public static final class position {
+
+        int x, y;
+
+        ArrayList<position> arrList;
+
+        public position(int x, int y, int power) {
+            this.x = x;
+            this.y = y;
+            this.power = power;
+            arrList = new ArrayList<>();
+            addToList();
+        }
+        public position(int x,int y){
+            this.x = x;
+            this.y = y;
+        }
+
+        public void addToList() {
+            addOrgin();
+            addUp();
+            addDown();
+            addLeft();
+            addRight();
+        }
+
+        public ArrayList<position> getPositions() {
+            return arrList;
+        }
+        public void addOrgin(){
+        position t_pos=new position(x,y);
+        arrList.add(t_pos);
+        }
+        public void addUp() {
+            int temp = x;
+            for (int i = 1; i <= power; i++) {
+                temp--;
+                position t_pos=new position(temp,y);
+                arrList.add(t_pos);
+            }
+        }
+
+        public void addDown() {
+            int temp = x;
+            for (int i = 1; i <= power; i++) {
+                temp++;
+                position t_pos=new position(temp,y);
+                arrList.add(t_pos);
+            }
+        }
+
+        public void addLeft() {
+            int temp = y;
+            for (int i = 1; i <= power; i++) {
+                temp--;
+                position t_pos=new position(x,temp);
+                arrList.add(t_pos);
+            }
+        }
+
+        public void addRight() {
+            int temp = y;
+            for (int i = 1; i <= power; i++) {
+                temp++;
+                position t_pos=new position(x,temp);
+                arrList.add(t_pos);
+            }
+        }
+
+        public int getPower() {
+            return power;
+        }
+
+        public void setPower(int power) {
+            this.power = power;
+        }
+        int power;
+
+        public int getX() {
+            return x;
+        }
+
+        public void setX(int x) {
+            this.x = x;
+        }
+
+        public int getY() {
+            return y;
+        }
+
+        public void setY(int y) {
+            this.y = y;
+        }
+
+    }
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] nm = scanner.nextLine().split(" ");
+
+        int n = Integer.parseInt(nm[0]);
+
+        int m = Integer.parseInt(nm[1]);
+
+        String[] grid = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            String gridItem = scanner.nextLine();
+            grid[i] = gridItem;
+        }
+
+        int result = twoPluses(grid);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
