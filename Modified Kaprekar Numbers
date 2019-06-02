@@ -1,0 +1,61 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the kaprekarNumbers function below.
+    static void kaprekarNumbers(int p, int q) {
+      boolean cheker=false;
+       for(int i=p;i<=q;i++){
+           if(i==1 || i==9){
+               System.out.print(i+" ");
+               cheker=true;
+           }
+           else if(i>10){
+                   String str=String.valueOf(Long.valueOf(i)*Long.valueOf(i));
+                   int fVal=Integer.valueOf(str.substring(0,str.length()/2));
+                   int sVal=Integer.valueOf(str.substring(str.length()/2));
+                   if(sVal==0){
+                       continue;
+                   }
+                   else if((fVal+sVal)==i){
+                       System.out.print(i+" ");
+                       cheker=true;
+                       continue;
+                   }
+                   fVal=Integer.valueOf(str.substring(0,(str.length()/2)+1));
+                   sVal=Integer.valueOf(str.substring((str.length()/2)+1));
+                   if(sVal==0){
+                       continue;
+                   }
+                   else if((fVal+sVal)==i){
+                       System.out.print(i+" ");
+                       cheker=true;
+                   }
+               }  
+           }
+       if(!cheker){
+           System.out.println("INVALID RANGE");
+       } 
+
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int p = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        int q = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        kaprekarNumbers(p, q);
+
+        scanner.close();
+    }
+}
