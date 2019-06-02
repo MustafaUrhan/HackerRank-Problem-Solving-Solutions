@@ -1,0 +1,68 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the stones function below.
+    static void stones(int n, int a, int b) {
+       if(a == b)
+            {
+                System.out.println(a*n + " ");
+            }
+       else{
+            int minVal=Math.min(a, b);
+            int maxVal=Math.max(a, b);    
+            int min = minVal*n;
+            int max = maxVal*n;
+            for(int tot = min; tot <= max; tot += (b-a))
+            {
+                System.out.print(tot + " ");
+            }
+            System.out.println();
+       }
+
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException 
+    {
+        int T = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        for (int TItr = 0; TItr < T; TItr++)
+        {
+            int n = scanner.nextInt()-1;
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+            int a = scanner.nextInt();
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+            int b = scanner.nextInt();
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+             if(a == b)
+            {
+                System.out.println(a*n + " ");
+            }
+            else
+            {
+            int minVal=Math.min(a, b);
+            int maxVal=Math.max(a, b);    
+            int min = minVal*n;
+            int max = maxVal*n;
+            for(int tot = min; tot <= max; tot += (maxVal-minVal))
+            {
+                System.out.print(tot + " ");
+            }
+            System.out.println();
+            }
+        }
+
+        scanner.close();
+    }
+}
