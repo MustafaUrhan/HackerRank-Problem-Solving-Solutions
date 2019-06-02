@@ -41,17 +41,29 @@ JAVA-
 |Implementation| [Circular Array Rotation](https://www.hackerrank.com/challenges/circular-array-rotation/problem) | [Circular Array Rotation](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Circular%20Array%20Rotation) | 20.0 |
 |Implementation| [Sequence Equation](https://www.hackerrank.com/challenges/permutation-equation/problem) | [Sequence Equation](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Sequence%20Equation) | 20.0 |
 |Implementation| [Jumping on the Clouds: Revisited](https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem) | [Jumping on the Clouds: Revisited](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Jumping%20on%20the%20Clouds:%20Revisited) | 15.0 |
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
+|Implementation| [Find Digits](https://www.hackerrank.com/challenges/find-digits/problem) | [Find Digits](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Find%20Digits) | 25.0 |
+|Implementation| [Append and Delete](https://www.hackerrank.com/challenges/append-and-delete/problem) | [Append and Delete](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Append%20and%20Delete) | 20.0 |
+|Implementation| [Sherlock and Squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem) | [Sherlock and Squares](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Sherlock%20and%20Squares) | 20.0 |
+|Implementation| [Library Fine](https://www.hackerrank.com/challenges/library-fine/problem) | [Library Fine](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Library%20Fine) | 15.0 |
+|Implementation| [Cut the sticks](https://www.hackerrank.com/challenges/cut-the-sticks/problem) | [Cut the sticks](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Cut%20the%20sticks) | 25.0 |
+|Implementation| [Repeated String](https://www.hackerrank.com/challenges/repeated-string/problem) | [Repeated String](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Repeated%20String) | 20.0 |
+|Implementation| [Jumping on the Clouds](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem) | [Jumping on the Clouds](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Jumping%20on%20the%20Clouds) | 20.0 |
+|Implementation| [Equalize the Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem) | [Equalize the Array](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Equalize%20the%20Array) | 20.0 |
+|Implementation| [ACM ICPC Team](https://www.hackerrank.com/challenges/acm-icpc-team/problem) | [ACM ICPC Team](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/ACM%20ICPC%20Team) | 25.0 |
+|Implementation| [Taum and B'day](https://www.hackerrank.com/challenges/taum-and-bday/problem) | [Taum and B'day](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Taum%20and%20B'day) | 25.0 |
+|Implementation| [Modified Kaprekar Numbers](https://www.hackerrank.com/challenges/kaprekar-numbers/problem) | [Modified Kaprekar Numbers](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Modified%20Kaprekar%20Numbers) | 30.0 |
+|Implementation| [Beautiful Triplets](https://www.hackerrank.com/challenges/beautiful-triplets/problem) | [Beautiful Triplets](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Beautiful%20Triplets) | 20.0 |
+|Implementation| [Minimum Distances](https://www.hackerrank.com/challenges/minimum-distances/problem) | [Minimum Distances](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Minimum%20Distances) | 20.0 |
+|Implementation| [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale/problem) | [Halloween Sale](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Halloween%20Sale) | 20.0 |
+|Implementation| [Chocolate Feast](https://www.hackerrank.com/challenges/chocolate-feast/problem) | [Chocolate Feast](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Chocolate%20Feast) | 25.0 |
+|Implementation| [Service Lane](https://www.hackerrank.com/challenges/service-lane/problem) | [Service Lane](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Service%20Lane) | 20.0 |
+|Implementation| [Lisa's Workbook](https://www.hackerrank.com/challenges/lisa-workbook/problem) | [Lisa's Workbook](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Lisa's%20Workbook) | 25.0 |
+|Implementation| [Flatland Space Stations](https://www.hackerrank.com/challenges/flatland-space-stations/problem) | [Flatland Space Stations](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Flatland%20Space%20Stations) | 25.0 |
+|Implementation| [Fair Rations](https://www.hackerrank.com/challenges/fair-rations/problem) | [Fair Rations](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Fair%20Rations) | 25.0 |
+|Implementation| [Cavity Map](https://www.hackerrank.com/challenges/cavity-map/problem) | [Cavity Map](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Cavity%20Map) | 30.0 |
+|Implementation| [Manasa and Stones](https://www.hackerrank.com/challenges/manasa-and-stones/problem) | [Manasa and Stones](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Manasa%20and%20Stones) | 30.0 |
+|Implementation| [Happy Ladybugs](https://www.hackerrank.com/challenges/happy-ladybugs/problem) | [Happy Ladybugs](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Happy%20Ladybugs) | 30.0 |
+|Implementation| [Strange Counter](https://www.hackerrank.com/challenges/strange-code/problem) | [Strange Counter](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Strange%20Counter) | 30.0 |
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
