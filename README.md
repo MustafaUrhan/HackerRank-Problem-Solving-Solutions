@@ -39,6 +39,24 @@ JAVA-
 |Implementation| [Viral Advertising](https://www.hackerrank.com/challenges/strange-advertising/problem) | [Viral Advertising](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Viral%20Advertising) | 15.0 |
 |Implementation| [Save the Prisoner!](https://www.hackerrank.com/challenges/save-the-prisoner/problem) | [Save the Prisoner!](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Save%20the%20Prisoner!) | 15.0 |
 |Implementation| [Circular Array Rotation](https://www.hackerrank.com/challenges/circular-array-rotation/problem) | [Circular Array Rotation](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Circular%20Array%20Rotation) | 20.0 |
+|Implementation| [Sequence Equation](https://www.hackerrank.com/challenges/permutation-equation/problem) | [Sequence Equation](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Sequence%20Equation) | 20.0 |
+|Implementation| [Jumping on the Clouds: Revisited](https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem) | [Jumping on the Clouds: Revisited](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Jumping%20on%20the%20Clouds:%20Revisited) | 15.0 |
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
+|Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
