@@ -1,0 +1,40 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the countSort function below.
+    static void countSort(List<List<String>> arr) {
+
+
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader buffRead = new BufferedReader(new InputStreamReader(System.in));
+        int tCase = Integer.parseInt(buffRead.readLine());
+        HashMap<Integer, StringBuffer> hMap = new HashMap<>();
+        for (int i = 0; i < 100; i++) {
+            hMap.put(i, new StringBuffer());
+        }
+        for (int i = 0; i < tCase; i++) {
+            String[] str = buffRead.readLine().split(" ");
+            int index = Integer.parseInt(str[0]);
+            if (i < tCase / 2) {
+                hMap.put(index, hMap.get(index).append("-" + " "));
+            } else {
+                hMap.put(index, hMap.get(index).append(str[1] + " "));
+            }
+        }
+        buffRead.close();
+        StringBuffer strBuf = new StringBuffer();
+        for (int i=0;i<100;i++) {
+            strBuf.append(hMap.get(i));
+        }
+        System.out.println(strBuf);
+    }
+}
