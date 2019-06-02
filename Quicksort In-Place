@@ -1,0 +1,56 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+  static int partition(int arr[], int low, int high) 
+    { 
+        int pivot = arr[high];  
+        int i = (low-1); 
+        for (int j=low; j<high; j++) 
+        { 
+            if (arr[j] <= pivot) 
+            { 
+                i++; 
+                int temp = arr[i]; 
+                arr[i] = arr[j]; 
+                arr[j] = temp; 
+             
+            } 
+        } 
+        int temp = arr[i+1]; 
+        arr[i+1] = arr[high]; 
+        arr[high] = temp; 
+        printArr(arr);
+  
+        return i+1; 
+    } 
+    static void printArr(int arr[]){
+        for(int element:arr){
+            System.out.print(element+" ");
+        }System.out.print("\n");
+    }
+  
+    static void sort(int arr[], int low, int high) 
+    { 
+        if (low < high) 
+        { 
+            int pi = partition(arr, low, high); 
+            sort(arr, low, pi-1); 
+            sort(arr, pi+1, high); 
+        } 
+    } 
+    public static void main(String[] args) {
+         Scanner in = new Scanner(System.in);
+            int n = in.nextInt();
+            int[] ar = new int[n];
+            for(int i=0;i<n;i++){
+               ar[i]=in.nextInt(); 
+            }
+       sort(ar,0,n-1);
+    }
+}
+
