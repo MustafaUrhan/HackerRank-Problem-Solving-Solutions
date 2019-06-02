@@ -64,6 +64,22 @@ JAVA-
 |Implementation| [Manasa and Stones](https://www.hackerrank.com/challenges/manasa-and-stones/problem) | [Manasa and Stones](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Manasa%20and%20Stones) | 30.0 |
 |Implementation| [Happy Ladybugs](https://www.hackerrank.com/challenges/happy-ladybugs/problem) | [Happy Ladybugs](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Happy%20Ladybugs) | 30.0 |
 |Implementation| [Strange Counter](https://www.hackerrank.com/challenges/strange-code/problem) | [Strange Counter](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Strange%20Counter) | 30.0 |
+|Implementation| [Forming a Magic Square](https://www.hackerrank.com/challenges/magic-square-forming/problem) | [Forming a Magic Square](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Forming%20a%20Magic%20Square) | 20.0 |
+|Implementation| [Climbing the Leaderboard](https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem) | [Climbing the Leaderboard](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Climbing%20the%20Leaderboard) | 20.0 |
+|Implementation| [Extra Long Factorials](https://www.hackerrank.com/challenges/extra-long-factorials/problem) | [Extra Long Factorials](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Extra%20Long%20Factorials) | 20.0 |
+|Implementation| [Non-Divisible Subset](https://www.hackerrank.com/challenges/non-divisible-subset/problem) | [Non-Divisible Subset](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Non-Divisible%20Subset) | 20.0 |
+|Implementation| [Queen's Attack II](https://www.hackerrank.com/challenges/queens-attack-2/problem) | [Queen's Attack II](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Queen's%20Attack%20II) | 30.0 |
+|Implementation| [Organizing Containers of Balls](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem) | [Organizing Containers of Balls](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Organizing%20Containers%20of%20Balls) | 30.0 |
+|Implementation| [Encryption](https://www.hackerrank.com/challenges/encryption/problem) | [Encryption](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Encryption) | 30.0 |
+|Implementation| [Bigger is Greater](https://www.hackerrank.com/challenges/bigger-is-greater/problem) | [Bigger is Greater](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Bigger%20is%20Greater) | 35.0 |
+|Implementation| [The Time in Words](https://www.hackerrank.com/challenges/the-time-in-words/problem) | [The Time in Words](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/The%20Time%20in%20Words) | 25.0 |
+|Implementation| [The Grid Search](https://www.hackerrank.com/challenges/the-grid-search/problem) | [The Grid Search](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/The%20Grid%20Search) | 30.0 |
+|Implementation| [3D Surface Area](https://www.hackerrank.com/challenges/3d-surface-area/problem) | [3D Surface Area](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/3D%20Surface%20Area) | 30.0 |
+|Implementation| [Absolute Permutation](https://www.hackerrank.com/challenges/absolute-permutation/problem) | [Absolute Permutation](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Absolute%20Permutation) | 40.0 |
+|Implementation| [The Bomberman Game](https://www.hackerrank.com/challenges/bomber-man/problem) | [The Bomberman Game](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/The%20Bomberman%20Game) | 40.0 |
+|Implementation| [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses/problem) | [Ema's Supercomputer](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Ema's%20Supercomputer) | 40.0 |
+|Implementation| [Larry's Array](https://www.hackerrank.com/challenges/larrys-array/problem) | [Larry's Array](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Larry's%20Array) | 40.0 |
+|Implementation| [Almost Sorted](https://www.hackerrank.com/challenges/almost-sorted/problem) | [Almost Sorted](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Almost%20Sorted) | 50.0 |
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
@@ -76,5 +92,4 @@ JAVA-
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
 |Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
+
