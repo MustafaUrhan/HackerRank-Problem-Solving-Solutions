@@ -1,0 +1,56 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the acmTeam function below.
+    private static void acmTeam(String[] topic) {
+      int maxT_Count=0;
+      int tTotal=0;
+      for(int i=0;i<topic.length-1;i++){
+          for(int j=i+1;j<topic.length;j++){
+              String aStr=topic[i];
+              String bStr=topic[j];
+              int tCount=0;
+              for(int k=0;k<aStr.length()|| k<bStr.length();k++){
+                  if(aStr.charAt(k)=='1' || bStr.charAt(k)=='1'){
+                      tCount++;
+                  }
+              }
+              if(maxT_Count==tCount){
+                  tTotal++;
+              }
+              if(tCount>maxT_Count){
+                  maxT_Count=tCount;
+                  tTotal=1;
+              }
+          }
+      }
+        System.out.print(maxT_Count+"\n"+tTotal);
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        String[] nm = scanner.nextLine().split(" ");
+
+        int n = Integer.parseInt(nm[0]);
+
+        int m = Integer.parseInt(nm[1]);
+
+        String[] topic = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            String topicItem = scanner.nextLine();
+            topic[i] = topicItem;
+        }
+
+        acmTeam(topic);
+        scanner.close();
+    }
+}
