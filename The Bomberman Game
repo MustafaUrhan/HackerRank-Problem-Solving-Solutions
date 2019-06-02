@@ -1,0 +1,148 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+     private static String[] bomberMan(int n, String[] grid) {
+        if(n%2==0){
+            CreateZero(grid);
+        } 
+        if(n%4==3){
+           return b3Man(grid);
+        }
+        if(n!=1 && n%4==1)
+        {
+            b3Man(grid);
+            return b3Man(grid);
+        }
+        
+        return grid;
+    }
+    private static String[] b3Man( String[] grid){
+         ArrayList<Position> arrPos=new ArrayList<>();
+            for(int i=0;i<grid.length;i++){
+                for(int j=0;j<grid[0].length();j++){
+                    if(grid[i].charAt(j)=='O'){
+                        Position pos=new Position(i, j);
+                        arrPos.add(pos);
+                    }
+                }
+            }
+            CreateZero(grid);
+            for(Position element:arrPos){
+                int elX=element.GetX();
+                int elY=element.GetY();
+                if(grid[elX].charAt(elY)!='.'){
+                if(elY==0){
+                    grid[elX]="."+grid[elX].substring(1); 
+                }
+                else if(elY==grid[elX].length()-1){
+                    grid[elX]=grid[elX].substring(0,grid[elX].length()-1)+"."; 
+                }
+                else{
+                    grid[elX]=grid[elX].substring(0,elY)+"."+grid[elX].substring(elY+1);
+                }
+                }
+                //----------------------------------------------------------------------------------------
+                if(elX-1>=0){
+                    if(elY==0){
+                        grid[elX-1]="."+grid[elX-1].substring(1); 
+                    }
+                    else if(elY==grid[0].length()-1){
+                        grid[elX-1]=grid[elX-1].substring(0,grid[0].length()-1)+"."; 
+                    }
+                    else{
+                        grid[elX-1]=grid[elX-1].substring(0,elY)+"."+grid[elX-1].substring(elY+1);
+                    }     
+                }if(elX+1<=grid.length-1){
+                    if(elY==0){
+                        grid[elX+1]="."+grid[elX+1].substring(1); 
+                    }
+                    else if(elY==grid[0].length()-1){
+                        grid[elX+1]=grid[elX+1].substring(0,grid[0].length()-1)+"."; 
+                    }
+                    else{
+                        grid[elX+1]=grid[elX+1].substring(0,elY)+"."+grid[elX+1].substring(elY+1);
+                    }
+                }
+                //---------------------------------------------------------------------
+                if(elY-1>=0){
+                    if(elY-1==0){
+                        grid[elX]="."+grid[elX].substring(1); 
+                    }
+                    else{
+                        grid[elX]=grid[elX].substring(0,elY-1)+"."+grid[elX].substring(elY);
+                    }
+                }
+                if(elY+1<=grid[0].length()-1){
+                    if(elY+1==grid[0].length()-1){
+                        grid[elX]=grid[elX].substring(0,grid[0].length()-1)+"."; 
+                    }
+                    else {
+                            grid[elX]=grid[elX].substring(0,elY+1)+"."+grid[elX].substring(elY+2);
+                      
+                      
+                        
+                    }
+                }
+            }
+     return grid;
+    }
+    
+    private static void CreateZero(String[] grid){
+        for(int i=0;i<grid.length;i++){
+                grid[i]=grid[i].replaceAll(".","O");
+            }
+    }
+    public static class Position{
+        int x,y;
+        public Position(int x,int y) {
+            this.x=x;
+            this.y=y;
+        }
+        public int GetX(){return this.x;}
+        public int GetY(){return this.y;}
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] rcn = scanner.nextLine().split(" ");
+
+        int r = Integer.parseInt(rcn[0]);
+
+        int c = Integer.parseInt(rcn[1]);
+
+        int n = Integer.parseInt(rcn[2]);
+
+        String[] grid = new String[r];
+
+        for (int i = 0; i < r; i++) {
+            String gridItem = scanner.nextLine();
+            grid[i] = gridItem;
+        }
+
+        String[] result = bomberMan(n, grid);
+
+        for (int i = 0; i < result.length; i++) {
+            bufferedWriter.write(result[i]);
+
+            if (i != result.length - 1) {
+                bufferedWriter.write("\n");
+            }
+        }
+
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
