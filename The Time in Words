@@ -1,0 +1,72 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    private static String[] o_Nums={" ","one","two","three","four","five","six","seven","eight","nine","ten",
+        "eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
+        private static String[] t_Nums={" "," ","twenty","thirty","fourty","fifty","sixty"};
+    static String timeInWords(int h, int m) {
+         if(m==0){
+            return hourInWord(h)+" o' clock";
+        }
+        else if(m<=30){
+            if(m==15){
+                return "quarter past "+hourInWord(h);
+            }
+            if(m==30){
+                return "half past "+hourInWord(h);
+            }
+           return minuteInWord(m)+"past "+hourInWord(h);
+
+        }
+        else{
+            if(m==45){
+                return "quarter to "+hourInWord(h+1);
+            }
+            return minuteInWord(60-m)+"to "+hourInWord(h+1);
+        }
+
+    }
+    private static String hourInWord(int h){
+         return h<=12 ?  o_Nums[h]:o_Nums[h-12];
+    }
+    private static String minuteInWord(int m){
+        if(m==1){
+            return "one minute ";
+        }
+        else if(m<=19){
+            return o_Nums[m]+" minutes ";
+        }
+        else{
+            return (m%10)!=0 ? t_Nums[m/10]+" "+o_Nums[m%10]+" minutes ":t_Nums[m/10]+" minutes ";
+        }
+        
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int h = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        int m = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        String result = timeInWords(h, m);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
