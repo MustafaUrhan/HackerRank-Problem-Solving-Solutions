@@ -80,16 +80,26 @@ JAVA-
 |Implementation| [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses/problem) | [Ema's Supercomputer](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Ema's%20Supercomputer) | 40.0 |
 |Implementation| [Larry's Array](https://www.hackerrank.com/challenges/larrys-array/problem) | [Larry's Array](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Larry's%20Array) | 40.0 |
 |Implementation| [Almost Sorted](https://www.hackerrank.com/challenges/almost-sorted/problem) | [Almost Sorted](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Almost%20Sorted) | 50.0 |
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-|Implementation| []() | []() | Score|
-
+|Strings| [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string/problem) | [Super Reduced String](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Super%20Reduced%20String) | 10.0 |
+|Strings| [CamelCase](https://www.hackerrank.com/challenges/camelcase/problem) | [CamelCase](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/CamelCase) | 15.0 |
+|Strings| [Strong Password](https://www.hackerrank.com/challenges/strong-password/problem) | [Strong Password](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Strong%20Password) | 15.0 |
+|Strings| [Two Characters](https://www.hackerrank.com/challenges/two-characters/problem) | [Two Characters](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Two%20Characters) | 20.0 |
+|Sorting| [Big Sorting](https://www.hackerrank.com/challenges/big-sorting/problem) | [Big Sorting](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Big%20Sorting) | 20.0 |
+|Sorting| [Insertion Sort - Part 1](https://www.hackerrank.com/challenges/insertionsort1/problem) | [Insertion Sort - Part 1](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Insertion%20Sort%20-%20Part%201) | 30.0 |
+|Sorting| [Insertion Sort - Part 2](https://www.hackerrank.com/challenges/insertionsort2/problem) | [Insertion Sort - Part 2](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Insertion%20Sort%20-%20Part%202) | 30.0|
+|Sorting| [Correctness and the Loop Invariant](https://www.hackerrank.com/challenges/correctness-invariant/problem) | [Correctness and the Loop Invariant](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Correctness%20and%20the%20Loop%20Invariant) | 30.0 |
+|Sorting| [Running Time of Algorithms](https://www.hackerrank.com/challenges/runningtime/problem) | [Running Time of Algorithms](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Running%20Time%20of%20Algorithms) | 30.0 |
+|Sorting| [Quicksort 1 - Partition](https://www.hackerrank.com/challenges/quicksort1/problem) | [Quicksort 1 - Partition](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Quicksort%201%20-%20Partition) | 10.0 |
+|Sorting| [Counting Sort 1](https://www.hackerrank.com/challenges/countingsort1/problem) | [Counting Sort 1](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Counting%20Sort%201) | 30.0 |
+|Sorting| [Counting Sort 2](https://www.hackerrank.com/challenges/countingsort2/problem) | [Counting Sort 2](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Counting%20Sort%202) | 30.0 |
+|Sorting| [Closest Numbers](https://www.hackerrank.com/challenges/closest-numbers/problem) | [Closest Numbers](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Closest%20Numbers) | 35.0 |
+|Sorting| [Find the Median](https://www.hackerrank.com/challenges/find-the-median/problem) | [Find the Median](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Find%20the%20Median) | 35.0 |
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
+|Sorting| []() | []() | Score|
