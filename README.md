@@ -1,8 +1,6 @@
 # HackerRank-Problem-Solving-Solutions
 Problems Solved by JAVA
 
-JAVA-
-
 | SUBDOMAINS  | CHALLENGE | SOLUTION | SCORE |
 | ----------- | --------- | -------- | ----- |
 | WarmUp | [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem) | [Solve Me First](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Solve%20Me%20First) | 1.0 |
