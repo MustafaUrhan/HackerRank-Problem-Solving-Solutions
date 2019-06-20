@@ -1,0 +1,160 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+private static List<Integer> tempCircle;
+    private static void matrixRotation(List<List<Integer>> matrix, int r) {
+        int m = matrix.size();
+        int n = matrix.get(0).size();
+        int startM = 0;
+        int startN = 0;
+        int endM = m - 1;
+        int endN = n - 1;
+        int currentM = 0;
+        int currentN = 0;
+        
+        while (endM > startM && endN > startN) {
+            List<Integer> circleList = new ArrayList<>();
+            manage(circleList, matrix, startM, startN, endM, endN, true, currentM, currentN);
+            rotate(tempCircle, r);   
+            manage(tempCircle, matrix, startM, startN, endM, endN, false, currentM, currentN);
+            startM++;
+            startN++;
+            endM--;
+            endN--;
+            currentM++;
+            currentN++;
+        }
+         printMatrix(matrix);
+    }
+    private static void rotate(List<Integer> list, int interval){
+         int size = list.size();
+        if (size == 0)
+            return;
+        interval = interval % size;
+        if (interval < 0)
+            interval += size;
+        if (interval == 0)
+            return;
+
+        for (int cycleStart = 0, nMoved = 0; nMoved != size; cycleStart++) {
+            int displaced = list.get(cycleStart);
+            int i = cycleStart;
+            do {
+                i += interval;
+                if (i >= size)
+                    i -= size;
+                displaced = list.set(i, displaced);
+                nMoved ++;
+            } while (i != cycleStart);
+        }
+    }
+    private static void manage(List<Integer> circleList, List<List<Integer>> matrix,
+            int startM, int startN, int endM, int endN,
+            boolean isAdd, int currentM, int currentN) {
+        if (isAdd) {
+            circleList = new ArrayList<>();
+        }
+        List<Integer> rowList = new ArrayList<>();
+        int counter = 0;
+        while (currentM <= endM) {
+            if (isAdd) {
+                circleList.add(matrix.get(currentM).get(currentN));
+            } else {
+                int element = circleList.get(counter);
+                rowList = matrix.get(currentM);
+                rowList.set(currentN, element);
+                counter++;
+            }
+            currentM++;
+        }
+        currentM--;
+        currentN++;
+        while (currentN <= endN) {
+            if (isAdd) {
+                circleList.add(matrix.get(currentM).get(currentN));
+            } else {
+                int element = circleList.get(counter);
+                rowList = matrix.get(currentM);
+                rowList.set(currentN, element);
+                counter++;
+            }
+            currentN++;
+
+        }
+        currentM--;
+        currentN--;
+
+        while (currentM >= startM) {
+            if (isAdd) {
+                circleList.add(matrix.get(currentM).get(currentN));
+            } else {
+                int element = circleList.get(counter);
+                rowList = matrix.get(currentM);
+                rowList.set(currentN, element);
+                counter++;
+            }
+            currentM--;
+        }
+        currentM++;
+        currentN--;
+
+        while (currentN > startN) {
+            if (isAdd) {
+                circleList.add(matrix.get(currentM).get(currentN));
+            } else {
+                int element = circleList.get(counter);
+                rowList = matrix.get(currentM);
+                rowList.set(currentN, element);
+                counter++;
+            }
+            currentN--;
+        }
+        if (isAdd) {
+            tempCircle = circleList;
+        }
+
+    }
+    private static void printMatrix(List<List<Integer>> matrix) {
+        for (List element : matrix) {
+            System.out.println(element.toString().
+                    replaceAll(",","").replace("[","").replace("]",""));
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        String[] mnr = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        int m = Integer.parseInt(mnr[0]);
+
+        int n = Integer.parseInt(mnr[1]);
+
+        int r = Integer.parseInt(mnr[2]);
+
+        List<List<Integer>> matrix = new ArrayList<>();
+
+        for (int i = 0; i < m; i++) {
+            String[] matrixRowTempItems = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+            List<Integer> matrixRowItems = new ArrayList<>();
+
+            for (int j = 0; j < n; j++) {
+                int matrixItem = Integer.parseInt(matrixRowTempItems[j]);
+                matrixRowItems.add(matrixItem);
+            }
+
+            matrix.add(matrixRowItems);
+        }
+
+        matrixRotation(matrix, r);
+
+        bufferedReader.close();
+    }
+}
