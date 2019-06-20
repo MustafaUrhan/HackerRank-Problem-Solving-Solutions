@@ -78,6 +78,7 @@ Problems Solved by JAVA
 |Implementation| [Ema's Supercomputer](https://www.hackerrank.com/challenges/two-pluses/problem) | [Ema's Supercomputer](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Ema's%20Supercomputer) | 40.0 |
 |Implementation| [Larry's Array](https://www.hackerrank.com/challenges/larrys-array/problem) | [Larry's Array](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Larry's%20Array) | 40.0 |
 |Implementation| [Almost Sorted](https://www.hackerrank.com/challenges/almost-sorted/problem) | [Almost Sorted](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Almost%20Sorted) | 50.0 |
+|Implementation| [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo/problem) | [Matrix Layer Rotation](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Matrix%20Layer%20Rotation) | 80.0 |
 |Strings| [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string/problem) | [Super Reduced String](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Super%20Reduced%20String) | 10.0 |
 |Strings| [CamelCase](https://www.hackerrank.com/challenges/camelcase/problem) | [CamelCase](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/CamelCase) | 15.0 |
 |Strings| [Strong Password](https://www.hackerrank.com/challenges/strong-password/problem) | [Strong Password](https://github.com/uluhanci/HackerRank-Problem-Solving-Solutions/blob/master/Strong%20Password) | 15.0 |
